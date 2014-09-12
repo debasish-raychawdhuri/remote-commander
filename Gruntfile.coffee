@@ -4,6 +4,7 @@ module.exports = (grunt) ->
 			compile:
 				files: [
 					{expand: true, cwd: 'src/', src: '*.coffee', dest: 'lib/', ext: '.js', filter: 'isFile'}
+                    {expand: true, cwd: 'src/ssh', src: '*.coffee', dest: 'lib/ssh', ext: '.js', filter: 'isFile'}
 				]
 		watch:
 			lib:

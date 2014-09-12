@@ -1,0 +1,11 @@
+{
+	"host": "localhost",
+	"port": 2222,
+	"username": "demo",
+	"keyFile": "./id_rsa",
+    "commands": [
+        "ls -l",
+        "echo hello"
+    ]
+		
+}
