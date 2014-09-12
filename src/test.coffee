@@ -1,1 +1,1 @@
-console.log("Hello")
+exports.sayHello = (name) -> console.log "hello " + name 
