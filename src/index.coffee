@@ -1,0 +1,1 @@
+exports.main = ->require("../lib/test")
