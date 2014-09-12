@@ -2,9 +2,8 @@ fs = require 'fs'
 sshclient = require 'sshclient'
 laeh2 = require 'laeh2'
 _x = laeh2._x
-_ = require 'underscore'
 
-exports.connectSSH = (serverName, commands) ->
+exports.runCommandInServer = (serverName, commands, callback) ->
     serverConfigFile = serverName + '.json'
     serverOptsString =  fs.readFileSync serverConfigFile, 
         encoding: 'UTF-8'
@@ -18,12 +17,14 @@ exports.connectSSH = (serverName, commands) ->
         debug: true # optional
         console: 
             log :  ->
-                console.log arguments[4] if 0 == arguments[0].indexOf 'command:'
-        session: _.map commands, (command) ->
+                out = arguments[4] if 0 == arguments[0].indexOf 'command:'
+                err = arguments[3] if 0 == arguments[0].indexOf 'command:'
+                callback out, err if callback
+        session:  commands.map (command) ->
             opt = 
                 op: 'exec'
                 command: command
             
 
-    cb = (err) -> console.log "Wow "+err
+    cb = (err) -> callback(null,err)
     _x (sshclient.session opts, cb), true, cb
