@@ -1,6 +1,6 @@
 {
 	"host": "localhost",
-	"port": 222,
+	"port": 2222,
 	"username": "demo",
 	"keyFile": "./id_rsa",
     "commands": [
