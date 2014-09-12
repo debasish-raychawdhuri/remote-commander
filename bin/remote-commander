@@ -2,12 +2,6 @@
 
 // ---
 
-if (process.env.NODE_ENV == 'development') {
-	require('coffee-script');
-	
-	// ---
-	
-	require('../src/index').main();
-} else {
-	require('../lib/index').main();
-}
+
+require('../lib/index').main();
+

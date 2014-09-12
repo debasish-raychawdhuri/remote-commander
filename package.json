@@ -1,6 +1,6 @@
 {
 	"name": "remote-commander",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Debasish Ray Chawdhuri<debasish.chawdhuri@talentica.com>, Vivek Mishra<vivek.mishra1@talentica.com>",
 	"description": "Remote command dispatch utility",
 	"license": "MIT",

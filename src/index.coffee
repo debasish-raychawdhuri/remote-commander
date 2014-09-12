@@ -1,1 +1,1 @@
-exports.main = ->require("../lib/test")
+exports.main = ->require("./test")
