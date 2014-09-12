@@ -13,6 +13,7 @@ exports.runCommandInServer = (serverName, commands, callback) ->
         port: serverOpts.port
         username: serverOpts.username
         privateKey: fs.readFileSync(serverOpts.keyFile)
+        readyTimeout: 99999
 
         debug: true # optional
         console: 
