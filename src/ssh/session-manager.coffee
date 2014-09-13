@@ -1,7 +1,5 @@
 fs = require 'fs'
 sshclient = require 'sshclient'
-laeh2 = require 'laeh2'
-_x = laeh2._x
 
 exports.runCommandInServer = (serverName, commands, callback) ->
     serverConfigFile = serverName + '.json'
@@ -28,4 +26,4 @@ exports.runCommandInServer = (serverName, commands, callback) ->
             
 
     cb = (err) -> callback(null,err)
-    _x (sshclient.session opts, cb), true, cb
+    sshclient.session opts, cb
