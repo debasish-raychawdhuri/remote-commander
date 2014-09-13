@@ -1,0 +1,23 @@
+{
+    
+    "echo" : [
+        {
+            "server" : "ubuntu32",
+            "commands": [
+                "echo what",
+                "echo world"
+            ]
+        },
+        {
+            "server" : "ubuntu64",
+            "commands": [
+                "echo but",
+                "touch damn"
+            ]
+        }
+    ]
+        
+        
+   
+    
+}

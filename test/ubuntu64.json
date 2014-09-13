@@ -1,12 +1,12 @@
 {
 	"host": "localhost",
-	"port": 2222,
+	"port": 2223,
 	"username": "demo",
 	"keyFile": "./id_rsa",
     "commands": [
         "ls -l",
         "echo hello",
-        "touch blah1"
+        "touch blah2"
     ]
 		
 }
