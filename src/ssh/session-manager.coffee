@@ -20,7 +20,7 @@ exports.runCommandInServer = (serverName, commands, callback) ->
             log :  ->
                 out = arguments[4] if 0 == arguments[0].indexOf 'command:'
                 err = arguments[3] if 0 == arguments[0].indexOf 'command:'
-                callback out, err if callback
+                callback out, err if callback?
         session: (serverOpts.commands.concat commands).map (command) ->
             opt = 
                 op: 'exec'
