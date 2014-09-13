@@ -1,5 +1,8 @@
 #Handles abstraction of commands
 
+#A remote commander front end must use this method 
+# to execute a named commandSet
+
 fs = require 'fs'
 sm = require '../ssh/session-manager'
 
