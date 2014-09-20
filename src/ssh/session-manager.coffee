@@ -20,9 +20,8 @@ exports.runCommandInServer = (serverName, commands, callback) ->
                 err = arguments[3] if 0 == arguments[0].indexOf 'command:'
                 callback out, err if callback?
         session: (serverOpts.commands.concat commands).map (command) ->
-            opt = 
-                op: 'exec'
-                command: command
+            op: 'exec'
+            command: command
             
 
     cb = (err) -> callback(null,err)

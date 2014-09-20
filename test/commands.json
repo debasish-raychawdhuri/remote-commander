@@ -2,14 +2,14 @@
     
     "echo" : [
         {
-            "server" : "ubuntu32",
+            "server" : "ubuntu1",
             "commands": [
                 "echo what",
                 "echo world"
             ]
         },
         {
-            "server" : "ubuntu64",
+            "server" : "ubuntu2",
             "commands": [
                 "echo but",
                 "touch damn"
