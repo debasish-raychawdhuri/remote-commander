@@ -6,6 +6,7 @@ module.exports = (grunt) ->
 					{expand: true, cwd: 'src/', src: '*.coffee', dest: 'lib/', ext: '.js', filter: 'isFile'}
                     {expand: true, cwd: 'src/ssh', src: '*.coffee', dest: 'lib/ssh', ext: '.js', filter: 'isFile'}
                     {expand: true, cwd: 'src/command', src: '*.coffee', dest: 'lib/command', ext: '.js', filter: 'isFile'}
+                    {expand: true, cwd: 'src/oauth', src: '*.coffee', dest: 'lib/oauth', ext: '.js', filter: 'isFile'}
 				]
 		watch:
 			lib:
