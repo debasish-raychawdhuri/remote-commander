@@ -6,8 +6,19 @@ exports.sayHello = (name) -> console.log "Welcome " + name
 exports.connectSSH = ->
     cm.runCommandSet 'echo' , (out,err) ->
         console.log out if out?
+<<<<<<< HEAD
+        console.error err if err?    
+=======
         console.error err if err?
             
             
 exports.gauth = (configName) ->
     console.log oauth.oauthFromConfig configName
+            
+    
+                
+                
+
+        
+        
+>>>>>>> 5e64476e48a618fb7dc2d50535240fe7a57beab2

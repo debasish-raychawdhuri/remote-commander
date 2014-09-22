@@ -1,33 +1,41 @@
 {
-  "name": "remote-commander",
-  "version": "0.0.2",
-  "author": "Debasish Ray Chawdhuri<debasish.chawdhuri@talentica.com>, Vivek Mishra<vivek.mishra1@talentica.com>",
-  "description": "Remote command dispatch utility",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/debasish-raychawdhuri/remote-commander.git"
-  },
-  "keywords": [
-    "remote",
-    "administration"
-  ],
-  "main": "./lib/index.js",
-  "bin": {
-    "remote-commander": "./bin/remote-commander"
-  },
-  "directories": {
-    "lib": "./lib/"
-  },
-  "dependencies": {
-    "node-twitter-api": "1.3.0",
-    "sshclient": "0.0.4",
-    "node-xmpp-client": "1.0.0-alpha7",
-    "node-xmpp-bosh": "0.7.10"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-watch": "0.5.3",
-    "grunt-contrib-coffee": "0.7.0"
-  }
+	"name": "remote-commander",
+	"version": "0.0.2",
+	"author": "Debasish Ray Chawdhuri<debasish.chawdhuri@talentica.com>, Vivek Mishra<vivek.mishra1@talentica.com>",
+	"description": "Remote command dispatch utility",
+	"license": "MIT",
+	
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/debasish-raychawdhuri/remote-commander.git"
+	},
+	
+	"keywords": [
+		"remote",
+		"administration"
+	],
+	
+	"main": "./lib/index.js",
+	
+	"bin": {
+		"remote-commander": "./bin/remote-commander"
+	},
+	
+	"directories": {
+		"lib": "./lib/"
+	},
+	
+	"dependencies": {
+        "node-twitter-api" : "1.3.0",
+        "sshclient" : "0.0.4",
+        "node-xmpp-client": "1.0.0-alpha7",
+        "googleapis": "1.0.14",
+	"node-xmpp-bosh": "0.7.10"
+	},
+	
+	"devDependencies": {
+		"grunt": "0.4.1",
+		"grunt-contrib-watch": "0.5.3",
+		"grunt-contrib-coffee": "0.7.0"
+	}
 }

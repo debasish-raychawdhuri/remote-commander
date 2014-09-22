@@ -1,0 +1,12 @@
+{
+	"host": "localhost",
+	"port": 2200,
+	"username": "vagrant",
+	"keyFile": "./vagrant",
+    "commands": [
+        "ls -l",
+        "echo hello",
+        "touch blah1"
+    ]
+		
+}
