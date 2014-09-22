@@ -5,9 +5,4 @@ exports.sayHello = (name) -> console.log "Welcome " + name
 exports.connectSSH = ->
     cm.runCommandSet 'echo' , (out,err) ->
         console.log out if out?
-        console.error err if err?
-                
-                
-
-        
-        
+        console.error err if err?    

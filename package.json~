@@ -22,8 +22,7 @@
   "dependencies": {
     "node-twitter-api": "1.3.0",
     "sshclient": "0.0.4",
-    "node-xmpp-client": "1.0.0-alpha7",
-    "node-xmpp-bosh": "0.7.10"
+    "node-xmpp-client": "1.0.0-alpha7"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
